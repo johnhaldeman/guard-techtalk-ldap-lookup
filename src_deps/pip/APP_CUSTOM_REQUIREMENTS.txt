@@ -1,0 +1,8 @@
+# This file may contain custom requirements for the app.
+# The packages listed here will be installed in addition to the basic packages that every app comes bundled with.
+# See https://pip.pypa.io/en/stable/user_guide/#requirements-files for details.
+# Examples:
+# asn1crypto==0.22.0
+# cffi==1.10.0
+
+ldap3>=2.5

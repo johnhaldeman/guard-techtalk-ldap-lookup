@@ -1,0 +1,7 @@
+.guard_config
+ldap-lookup.zip
+*.pyc
+app/password.py
+guard_app_venv/
+src_deps/pip/ldap3-2.5-py2.py3-none-any.whl
+src_deps/pip/pyasn1-0.4.3-py2.py3-none-any.whl

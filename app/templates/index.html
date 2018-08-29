@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link rel="icon" href="static/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <style>
+  body{
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Roboto', sans-serif;}
+    </style>
+  </head>
+<body>
+  <p>Hello world!<br>
+    Reached IBM Security Guardium machine.
+  </p>
+  <div style="color:gray; font-size:0.9em;">
+    <p>Recent logins:</p>
+  <ul>
+    {% for row in logins %}
+      {% if row.failed %}
+        <li style="color:red">
+      {% else %}
+        <li style="color:green">
+      {% endif %}
+        {{row['User Name']|safe }} 
+        ({{ row['Remote Address'] }}), 
+        {{ row.login_datetime }} 
+    {% else %}
+      <li><em>No logins were found.</em>
+    {% endfor %}
+    </ul>
+  </div>
+  <a href="{{ url_for('debug_view') }}">Show app.log</a><br>
+  <a href="{{ url_for('debug') }}">Open app.log</a>
+</body>
+</html>

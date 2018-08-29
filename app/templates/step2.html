@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="static/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="stylesheet" href="static/bulma.css" />
+  </head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+          {{ title }}
+      </h1>
+      <p class="subtitle">
+       {{ subtitle }}
+      </p>
+      <table class="table is-hoverable is-narrow is-fullwidth is-narrow is-striped is-bordered">
+        <tr>
+          {% for key in entitlements[0] %}
+          <th>{{ key }}</th>
+          {% endfor %}
+        </tr>
+      {% for row in entitlements %}
+        <tr>
+          {% for key in row %}
+           <td>{{ row[key] }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+      </table>
+  </div>
+</body>
+</html>

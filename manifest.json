@@ -1,0 +1,19 @@
+{
+    "SDK_version": "10.5.0.2", 
+    "description": "Entitlement Reports Supplemented with AD Data", 
+    "name": "Entitlement Reports with AD", 
+    "navigation_areas": [
+        {
+            "default_roles": [
+                "admin"
+            ], 
+            "id": "EntitlementAD", 
+            "name": "SQL Server sys/server/security admin", 
+            "text": "Entitlement Reports with AD", 
+            "url": "/step3"
+        }
+    ], 
+    "sqlguard_ip": "172.16.100.181", 
+    "uuid": "bd9732e9-626f-4416-8436-05ef64555b05", 
+    "version": "1.0"
+}
